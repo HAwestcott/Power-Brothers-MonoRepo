@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "DESIGN_HUB_SITE_PATH": "/sites/DesignHub",
+    "DESIGN_REQUEST_LIST_NAME": "TBC",
+    "TARGET_LIBRARY_NAME": "TBC",
+    "PROJECTS_FOLDER_PATH": "Projects",
+    "IMS_SITE_PATH": "/sites/IMS",
+    "PROVISION_ON_STATUS": "",
+    "PROVISIONING_QUEUE_NAME": "project-provisioning"
+  }
+}

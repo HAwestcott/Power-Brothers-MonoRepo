@@ -1,0 +1,10 @@
+id: standard-design-project
+folders:
+  - path: "01 Scope Docs"
+  - path: "02 Drawings"
+  - path: "03 Design Docs"
+  - path: "04 Design Calculations"
+  - path: "05 Safety in Design"
+  - path: "06 Environmental"
+  - path: "07 Checklists"
+  - path: "08 Authority Approval"

@@ -1,0 +1,34 @@
+{
+  "name": "design-hub-controlled-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Azure Functions provisioning automation for Design Hub controlled documents.",
+  "main": "dist/src/functions/*.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "rimraf dist",
+    "prestart": "npm run clean && npm run build",
+    "start": "func start",
+    "start:azurite": "azurite --silent --skipApiVersionCheck --location .azurite --debug .azurite/debug.log",
+    "queue:sample": "node scripts/enqueue-local-provisioning-message.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "18.x",
+    "@azure/storage-queue": "^12.27.0",
+    "azurite": "^3.35.0",
+    "azure-functions-core-tools": "^4.x",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.1.8"
+  }
+}

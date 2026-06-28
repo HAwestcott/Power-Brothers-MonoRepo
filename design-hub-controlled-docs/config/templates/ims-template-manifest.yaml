@@ -1,0 +1,26 @@
+templates:
+  scope-summary:
+    source:
+      sitePath: "/sites/IMS"
+      library: "TBC"
+      path: "TBC/Scope Summary.docx"
+  design-calculation-register:
+    source:
+      sitePath: "/sites/IMS"
+      library: "TBC"
+      path: "TBC/Design Calculation Register.xlsx"
+  safety-in-design:
+    source:
+      sitePath: "/sites/IMS"
+      library: "TBC"
+      path: "TBC/Safety in Design.docx"
+  environmental-checklist:
+    source:
+      sitePath: "/sites/IMS"
+      library: "TBC"
+      path: "TBC/Environmental Checklist.xlsx"
+  authority-approval-checklist:
+    source:
+      sitePath: "/sites/IMS"
+      library: "TBC"
+      path: "TBC/Authority Approval Checklist.xlsx"

@@ -1,0 +1,5 @@
+id: urd-stage-design
+displayName: URD Stage Design
+folderStructure: standard-design-project
+templateSet: standard-design-project
+distributorOverrides: true

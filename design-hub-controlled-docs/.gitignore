@@ -1,0 +1,15 @@
+bin/
+**/bin/
+obj
+Publish
+node_modules
+dist
+local.settings.json
+coverage/
+*.tsbuildinfo
+
+# Azurite artifacts
+__blobstorage__
+__queuestorage__
+__azurite_db*__.json
+.azurite/

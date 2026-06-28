@@ -1,0 +1,12 @@
+id: standard-design-project
+templates:
+  - templateKey: scope-summary
+    targetPath: "01 Scope Docs/Scope Summary.docx"
+  - templateKey: design-calculation-register
+    targetPath: "04 Design Calculations/Design Calculation Register.xlsx"
+  - templateKey: safety-in-design
+    targetPath: "05 Safety in Design/Safety in Design.docx"
+  - templateKey: environmental-checklist
+    targetPath: "06 Environmental/Environmental Checklist.xlsx"
+  - templateKey: authority-approval-checklist
+    targetPath: "08 Authority Approval/Authority Approval Checklist.xlsx"

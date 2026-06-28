@@ -1,0 +1,5 @@
+id: urd-masterplan
+displayName: URD Masterplan
+folderStructure: standard-design-project
+templateSet: standard-design-project
+distributorOverrides: true

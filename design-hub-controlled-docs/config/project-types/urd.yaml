@@ -1,0 +1,5 @@
+id: urd
+displayName: URD
+folderStructure: standard-design-project
+templateSet: standard-design-project
+distributorOverrides: true

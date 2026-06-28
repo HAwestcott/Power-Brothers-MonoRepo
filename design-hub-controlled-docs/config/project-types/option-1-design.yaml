@@ -1,0 +1,5 @@
+id: option-1-design
+displayName: Option 1 - Design
+folderStructure: standard-design-project
+templateSet: standard-design-project
+distributorOverrides: true
