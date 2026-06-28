@@ -31,8 +31,44 @@ For the current scaffold, the SharePoint calls are placeholders. A local smoke t
 4. In one terminal, run `npm run start:azurite`.
 5. In another terminal, run `npm start`.
 
-To exercise the queue trigger locally, enqueue a JSON message like `samples/provision-project-message.json` to the `project-provisioning` queue in Azurite. The function should build a provisioning plan and log that live SharePoint writes are not implemented yet.
+To exercise the queue trigger locally, enqueue a JSON message like `samples/provision-project-message.json` to the `project-provisioning` queue in Azurite. The function creates the configured folder structure under `Shared Documents/01 Projects` and copies resolved IMS templates.
 
 Run `npm run queue:sample` after Azurite and the Functions host are running to enqueue the sample message.
 
 Use a Functions-supported Node.js version for local host testing. The current host starts under unsupported Node versions, but logs a compatibility warning.
+
+Set `PROVISION_LOOKBACK_MINUTES=0` locally if you only want to test explicit queue messages and avoid polling recent Design Request items.
+
+## SharePoint Discovery
+
+Use `scripts/discover-sharepoint.ps1` after creating a PnP-compatible Entra app registration. The script signs in with device login and prints the Design Request fields and visible document libraries.
+
+```powershell
+pwsh ./scripts/discover-sharepoint.ps1 -ClientId "<app-client-id>"
+```
+
+The script defaults to tenant `wellsfordau.onmicrosoft.com`; pass `-Tenant` if that needs to change.
+
+If device login fails, try browser-based interactive auth:
+
+```powershell
+pwsh ./scripts/discover-sharepoint.ps1 -ClientId "<app-client-id>" -AuthMode Interactive
+```
+
+Do not put client secrets in commands or source files. If a client secret is required for a temporary discovery test, set `ENTRAID_CLIENT_SECRET` in the shell or let the script prompt for it:
+
+```powershell
+pwsh ./scripts/discover-sharepoint.ps1 -ClientId "<app-client-id>" -UseClientSecret
+```
+
+If PnP client-secret auth fails, use the Graph discovery script with Graph application permissions:
+
+```powershell
+pwsh ./scripts/discover-sharepoint-graph.ps1 -ClientId "<app-client-id>"
+```
+
+To resolve the known `Projects` folder sharing link at the same time:
+
+```powershell
+pwsh ./scripts/discover-sharepoint-graph.ps1 -ClientId "<app-client-id>" -ProjectsFolderSharingUrl "<folder-sharing-url>"
+```

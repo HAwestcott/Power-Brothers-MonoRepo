@@ -8,4 +8,4 @@
 6. The worker copies template files from the SharePoint-hosted IMS into the project folder.
 7. The worker updates the Design Request item with status, target URL, and errors.
 
-The current scaffold only builds the provisioning plan. Live SharePoint reads/writes are intentionally not implemented until the open SharePoint decisions are resolved.
+The queue worker currently creates folders and copies templates with resolved IMS source paths. Template entries still marked `TBC` are skipped until their IMS source paths are confirmed.

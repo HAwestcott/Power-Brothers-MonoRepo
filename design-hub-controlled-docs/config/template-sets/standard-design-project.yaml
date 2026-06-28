@@ -5,7 +5,7 @@ templates:
   - templateKey: design-calculation-register
     targetPath: "04 Design Calculations/Design Calculation Register.xlsx"
   - templateKey: safety-in-design
-    targetPath: "05 Safety in Design/Safety in Design.docx"
+    targetPath: "05 Safety in Design/PB-IMS-F-065 Safety in Design.xlsm"
   - templateKey: environmental-checklist
     targetPath: "06 Environmental/Environmental Checklist.xlsx"
   - templateKey: authority-approval-checklist

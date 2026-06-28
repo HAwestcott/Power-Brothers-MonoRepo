@@ -3,11 +3,17 @@
   "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "node",
-    "DESIGN_HUB_SITE_PATH": "/sites/DesignHub",
-    "DESIGN_REQUEST_LIST_NAME": "TBC",
-    "TARGET_LIBRARY_NAME": "TBC",
-    "PROJECTS_FOLDER_PATH": "Projects",
-    "IMS_SITE_PATH": "/sites/IMS",
+    "DESIGN_HUB_SITE_URL": "https://wellsfordau.sharepoint.com/sites/Design",
+    "DESIGN_HUB_SITE_PATH": "/sites/Design",
+    "DESIGN_REQUEST_LIST_NAME": "Design Hub",
+    "TARGET_LIBRARY_NAME": "Documents",
+    "TARGET_LIBRARY_INTERNAL_NAME": "Shared Documents",
+    "PROJECTS_FOLDER_PATH": "01 Projects",
+    "DESIGN_REQUEST_LIST_ID": "b39d089f-ae56-4812-8fd6-ed46fff42fad",
+    "DESIGN_HUB_HOSTNAME": "wellsfordau.sharepoint.com",
+    "PROVISION_LOOKBACK_MINUTES": "60",
+    "IMS_SITE_URL": "https://wellsfordau.sharepoint.com",
+    "IMS_SITE_PATH": "/",
     "PROVISION_ON_STATUS": "",
     "PROVISIONING_QUEUE_NAME": "project-provisioning"
   }

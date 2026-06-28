@@ -18,13 +18,13 @@
   },
   "dependencies": {
     "@azure/functions": "^4.0.0",
+    "@azure/storage-queue": "^12.27.0",
     "@microsoft/microsoft-graph-client": "^3.0.7",
     "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
     "@types/node": "18.x",
-    "@azure/storage-queue": "^12.27.0",
     "azurite": "^3.35.0",
     "azure-functions-core-tools": "^4.x",
     "rimraf": "^5.0.0",

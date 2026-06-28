@@ -11,9 +11,9 @@ templates:
       path: "TBC/Design Calculation Register.xlsx"
   safety-in-design:
     source:
-      sitePath: "/sites/IMS"
-      library: "TBC"
-      path: "TBC/Safety in Design.docx"
+      sitePath: "/"
+      library: "Shared Documents"
+      path: "1 IMS/005 Forms/PB-IMS-F-065 Safety in Design.xlsm"
   environmental-checklist:
     source:
       sitePath: "/sites/IMS"
